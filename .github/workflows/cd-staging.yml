@@ -1,0 +1,33 @@
+# CD Pipeline for Staging Environment
+# Triggered on push to staging branch
+# Deploys to Render Staging service using deploy hook
+
+name: CD - Staging
+
+on:
+  push:
+    branches:
+      - staging
+
+jobs:
+  cd-staging:
+    runs-on: ubuntu-latest
+    environment: staging
+    
+    steps:
+      # Step 1: Checkout the repository code
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      # Step 2: Trigger deployment on Render
+      - name: Deploy to Render Staging
+        run: |
+          echo "Triggering deployment to Staging environment..."
+          curl -X POST ${{ secrets.RENDER_DEPLOY_HOOK_STAGING_URL }}
+          
+      # Step 3: Confirm deployment
+      - name: Confirm Deployment
+        run: |
+          echo "✅ Deployment to Staging environment triggered at $(date)"
+          echo "📦 Render Service: pakvista-staging"
+          echo "🔗 Deploy hook used: RENDER_DEPLOY_HOOK_STAGING_URL"
