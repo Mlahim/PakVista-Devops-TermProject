@@ -7,127 +7,141 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
     <header>
         <nav class="nav-bar">
+            <div class="logo">PakVista<span class="dot">.</span></div>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="lahore.html">Lahore</a></li>
                 <li><a href="hunza.html">Hunza Valley</a></li>
-                <li><a href="karachi.html">Karachi</a></li>
+                <li><a href="karachi.html" class="active">Karachi</a></li>
                 <li><a href="swat.html">Swat</a></li>
             </ul>
         </nav>
-        <h1>Karachi - City of Lights</h1>
-        <p class="subtitle">The Vibrant Heart of Pakistan</p>
+        
+        <div style="text-align: center; padding: 4rem 2rem;">
+            <h1>Karachi - <span class="highlight">City of Lights</span></h1>
+            <p class="subtitle" style="font-size: 1.4rem; color: var(--text-muted);">The Vibrant Heart of Pakistan</p>
+        </div>
     </header>
 
-    <main>
-        <section>
-            <h2>About Karachi</h2>
+    <main style="display: flex; flex-direction: column; align-items: center; gap: 3rem; padding: 2rem 4rem 4rem 4rem; background-color: var(--bg-secondary);">
+        
+        <section class="card" style="width: 100%; max-width: 950px; text-align: left;">
+            <h2 style="color: var(--primary-color);">About Karachi</h2>
             <article>
                 <p>Karachi is the largest city in Pakistan and the capital of Sindh province. Known as the "City of Lights," it is the country's financial, commercial, and industrial hub. Located on the Arabian Sea, Karachi is a bustling metropolis that blends modernity with rich cultural heritage.</p>
             </article>
         </section>
 
-        <section>
-            <h2>Top Tourist Attractions</h2>
+        <section class="card" style="width: 100%; max-width: 950px; text-align: left;">
+            <h2 style="text-align: center; margin-bottom: 2rem; color: var(--primary-color);">Top Tourist Attractions</h2>
             
-            <article>
-                <h3>Clifton Beach</h3>
-                <figure>
-                    <div class="img-placeholder">Clifton Beach - Arabian Sea</div>
-                    <figcaption>Beautiful sunset at Clifton Beach</figcaption>
+            <article style="margin-bottom: 3rem;">
+                <h3 style="color: var(--text-dark); margin-bottom: 1rem;">Clifton Beach</h3>
+                <figure style="margin: 1rem 0;">
+                    <div class="img-placeholder" style="background-color: var(--bg-secondary); border: 1px dashed var(--border-color); color: var(--text-muted); padding: 4rem; text-align: center; border-radius: 12px; font-weight: 500; margin-bottom: 0.5rem;">Clifton Beach - Arabian Sea</div>
+                    <figcaption style="color: var(--text-muted); font-size: 0.9rem; font-style: italic; text-align: center;">Beautiful sunset at Clifton Beach</figcaption>
                 </figure>
                 <p>Clifton Beach is one of Karachi's most popular tourist destinations. Stretching along the Arabian Sea, the beach offers stunning views of the sunset, camel rides, and a variety of local street food.</p>
             </article>
 
-            <article>
-                <h3>Mohatta Palace</h3>
-                <figure>
-                    <div class="img-placeholder">Mohatta Palace - Architectural Gem</div>
-                    <figcaption>Mohatta Palace - A historical landmark</figcaption>
+            <article style="margin-bottom: 3rem;">
+                <h3 style="color: var(--text-dark); margin-bottom: 1rem;">Mohatta Palace</h3>
+                <figure style="margin: 1rem 0;">
+                    <div class="img-placeholder" style="background-color: var(--bg-secondary); border: 1px dashed var(--border-color); color: var(--text-muted); padding: 4rem; text-align: center; border-radius: 12px; font-weight: 500; margin-bottom: 0.5rem;">Mohatta Palace - Architectural Gem</div>
+                    <figcaption style="color: var(--text-muted); font-size: 0.9rem; font-style: italic; text-align: center;">Mohatta Palace - A historical landmark</figcaption>
                 </figure>
                 <p>Mohatta Palace is a stunning example of Indo-Saracenic architecture, built in 1927. Today, it houses a museum showcasing Pakistani art, culture, and history.</p>
             </article>
 
             <article>
-                <h3>Pakistan Maritime Museum</h3>
-                <figure>
-                    <div class="img-placeholder">Maritime Museum - Naval History</div>
-                    <figcaption>Pakistan Maritime Museum - Naval heritage</figcaption>
+                <h3 style="color: var(--text-dark); margin-bottom: 1rem;">Pakistan Maritime Museum</h3>
+                <figure style="margin: 1rem 0;">
+                    <div class="img-placeholder" style="background-color: var(--bg-secondary); border: 1px dashed var(--border-color); color: var(--text-muted); padding: 4rem; text-align: center; border-radius: 12px; font-weight: 500; margin-bottom: 0.5rem;">Maritime Museum - Naval History</div>
+                    <figcaption style="color: var(--text-muted); font-size: 0.9rem; font-style: italic; text-align: center;">Pakistan Maritime Museum - Naval heritage</figcaption>
                 </figure>
                 <p>The Pakistan Maritime Museum showcases the country's naval history and maritime heritage. The museum features an impressive collection of naval artifacts, including a real submarine that visitors can explore.</p>
             </article>
         </section>
 
-        <section>
-            <h2>Travel Information</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Attraction</th>
-                        <th>Best Time to Visit</th>
-                        <th>Location</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Clifton Beach</td>
-                        <td>November - February</td>
-                        <td>Clifton, Karachi</td>
-                    </tr>
-                    <tr>
-                        <td>Mohatta Palace</td>
-                        <td>October - March</td>
-                        <td>Clifton, Karachi</td>
-                    </tr>
-                    <tr>
-                        <td>Maritime Museum</td>
-                        <td>Year-round</td>
-                        <td>Karsaz, Karachi</td>
-                    </tr>
-                </tbody>
-            </table>
+        <section class="card" style="width: 100%; max-width: 950px;">
+            <h2 style="margin-bottom: 1.5rem; color: var(--primary-color);">Travel Information</h2>
+            <div style="overflow-x: auto;">
+                <table style="width: 100%; border-collapse: collapse; text-align: left;">
+                    <thead>
+                        <tr style="background-color: var(--bg-secondary); border-bottom: 2px solid var(--border-color);">
+                            <th style="padding: 1rem; color: var(--text-dark);">Attraction</th>
+                            <th style="padding: 1rem; color: var(--text-dark);">Best Time to Visit</th>
+                            <th style="padding: 1rem; color: var(--text-dark);">Location</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-bottom: 1px solid var(--border-color);">
+                            <td style="padding: 1rem; color: var(--text-muted);">Clifton Beach</td>
+                            <td style="padding: 1rem; color: var(--text-muted);">November - February</td>
+                            <td style="padding: 1rem; color: var(--text-muted);">Clifton, Karachi</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--border-color);">
+                            <td style="padding: 1rem; color: var(--text-muted);">Mohatta Palace</td>
+                            <td style="padding: 1rem; color: var(--text-muted);">October - March</td>
+                            <td style="padding: 1rem; color: var(--text-muted);">Clifton, Karachi</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 1rem; color: var(--text-muted);">Maritime Museum</td>
+                            <td style="padding: 1rem; color: var(--text-muted);">Year-round</td>
+                            <td style="padding: 1rem; color: var(--text-muted);">Karsaz, Karachi</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </section>
 
-        <section>
-            <h2>Plan Your Visit</h2>
-            <form>
-                <fieldset>
-                    <legend>Book Your Karachi Tour</legend>
-                    <div>
-                        <label for="name">Full Name:</label>
-                        <input type="text" id="name" name="name" placeholder="Your full name" required>
+        <section class="card" style="width: 100%; max-width: 600px;">
+            <h2 style="margin-bottom: 1.5rem; color: var(--primary-color);">Plan Your Visit</h2>
+            <form style="display: flex; flex-direction: column; gap: 1rem; text-align: left;">
+                <fieldset style="border: 1px solid var(--border-color); padding: 2rem; border-radius: 8px; background-color: var(--bg-main);">
+                    <legend style="color: var(--text-dark); font-weight: bold; padding: 0 0.5rem;">Book Your Karachi Tour</legend>
+                    
+                    <div style="margin-bottom: 1rem;">
+                        <label for="name" style="color: var(--text-dark); font-size: 0.9rem; font-weight: 500;">Full Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Your full name" required style="width: 100%; padding: 0.8rem; margin-top: 0.4rem; border: 1px solid var(--border-color); border-radius: 6px; font-family: inherit; background-color: var(--bg-secondary); outline: none;">
                     </div>
-                    <div>
-                        <label for="email">Email Address:</label>
-                        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                    
+                    <div style="margin-bottom: 1rem;">
+                        <label for="email" style="color: var(--text-dark); font-size: 0.9rem; font-weight: 500;">Email Address:</label>
+                        <input type="email" id="email" name="email" placeholder="your@email.com" required style="width: 100%; padding: 0.8rem; margin-top: 0.4rem; border: 1px solid var(--border-color); border-radius: 6px; font-family: inherit; background-color: var(--bg-secondary); outline: none;">
                     </div>
-                    <div>
-                        <label for="tour-type">Tour Type:</label>
-                        <select id="tour-type" name="tour-type">
+                    
+                    <div style="margin-bottom: 1rem;">
+                        <label for="tour-type" style="color: var(--text-dark); font-size: 0.9rem; font-weight: 500;">Tour Type:</label>
+                        <select id="tour-type" name="tour-type" style="width: 100%; padding: 0.8rem; margin-top: 0.4rem; border: 1px solid var(--border-color); border-radius: 6px; font-family: inherit; background-color: var(--bg-secondary); outline: none; cursor: pointer;">
                             <option value="beach">Beach Tour</option>
                             <option value="historical">Historical Tour</option>
                             <option value="cultural">Cultural Tour</option>
                             <option value="custom">Custom Tour</option>
                         </select>
                     </div>
-                    <div>
-                        <label for="travel-date">Preferred Travel Date:</label>
-                        <input type="date" id="travel-date" name="travel-date">
+                    
+                    <div style="margin-bottom: 1rem;">
+                        <label for="travel-date" style="color: var(--text-dark); font-size: 0.9rem; font-weight: 500;">Preferred Travel Date:</label>
+                        <input type="date" id="travel-date" name="travel-date" style="width: 100%; padding: 0.8rem; margin-top: 0.4rem; border: 1px solid var(--border-color); border-radius: 6px; font-family: inherit; background-color: var(--bg-secondary); outline: none;">
                     </div>
-                    <div>
-                        <label for="message">Special Requests:</label>
-                        <textarea id="message" name="message" rows="4" placeholder="Any special requirements..."></textarea>
+                    
+                    <div style="margin-bottom: 1rem;">
+                        <label for="message" style="color: var(--text-dark); font-size: 0.9rem; font-weight: 500;">Special Requests:</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Any special requirements..." style="width: 100%; padding: 0.8rem; margin-top: 0.4rem; border: 1px solid var(--border-color); border-radius: 6px; font-family: inherit; background-color: var(--bg-secondary); outline: none;"></textarea>
                     </div>
-                    <button type="submit">Book Now</button>
+                    
+                    <button type="submit" style="padding: 1rem; width: 100%; background-color: var(--primary-color); color: white; border: none; border-radius: 6px; font-weight: bold; cursor: pointer; transition: opacity 0.3s; margin-top: 0.5rem;" onmouseover="this.style.opacity='0.9'" onmouseout="this.style.opacity='1'">Book Now</button>
                 </fieldset>
             </form>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 PakVista - Discover Pakistan's Beauty</p>
+        <p>&copy; 2026 PakVista Engineering Team - Production CI Ready</p>
         <p><em>No JavaScript used - Pure HTML &amp; CSS</em></p>
     </footer>
 </body>
