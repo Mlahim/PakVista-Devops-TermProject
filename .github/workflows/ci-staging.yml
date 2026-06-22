@@ -1,3 +1,5 @@
+# CI Pipeline - Triggered to restart workflow
+name: CI - Staging
 # CI Pipeline for Staging Environment
 # Triggered on pull requests targeting the staging branch
 # Builds and pushes Docker image with staging-specific tags
